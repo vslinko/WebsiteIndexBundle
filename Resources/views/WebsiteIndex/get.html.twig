@@ -1,0 +1,28 @@
+{#
+Copyright 2012 Rithis Studio LLC
+Author Vyacheslav Slinko <vyacheslav.slinko@rithis.com>
+#}
+
+{% extends "RithisBootstrapBundle::base.html.twig" %}
+
+{% block title %}{% trans from "rithis_website_index" %}title{% endtrans %}{% endblock %}
+
+{% block head %}
+    <meta name="robots" content="noindex">
+{% endblock %}
+
+{% block header %}{% trans from "rithis_website_index" %}header{% endtrans %}{% endblock %}
+
+{% block content %}
+    {% if app.user.username %}
+        <div class="alert alert-success">{% trans with {"%username%": app.user.username} from "rithis_website_index" %}logined{% endtrans %}</b></div>
+    {% else %}
+        <div class="alert">{% trans from "rithis_website_index" %}anonymous{% endtrans %}</b></div>
+    {% endif%}
+
+    <ul>
+        {% for link in links %}
+            <li><a href="{{ link }}">{{ link }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

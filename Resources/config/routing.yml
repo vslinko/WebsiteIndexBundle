@@ -1,0 +1,8 @@
+# Copyright 2012 Rithis Studio LLC
+# Author Vyacheslav Slinko <vyacheslav.slinko@rithis.com>
+
+rithis_website_index_website_index_get:
+    pattern: /website-index
+    defaults: { _controller: RithisWebsiteIndexBundle:WebsiteIndex:get }
+    requirements:
+        _method: GET

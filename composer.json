@@ -1,0 +1,28 @@
+{
+    "name": "rithis/website-index-bundle",
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/rithis/WebsiteIndexBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vyacheslav Slinko",
+            "email": "vyacheslav.slinko@rithis.com",
+            "role": "Founder"
+        }
+    ],
+    "support": {
+        "email": "support@rithis.com",
+        "issues": "https://github.com/rithis/WebsiteIndexBundle/issues",
+        "wiki": "https://github.com/rithis/WebsiteIndexBundle/wiki",
+        "source": "https://github.com/rithis/WebsiteIndexBundle"
+    },
+    "require": {
+        "rithis/bootstrap-bundle": "@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rithis\\WebsiteIndexBundle": ""
+        }
+    },
+    "target-dir": "Rithis/WebsiteIndexBundle"
+}
